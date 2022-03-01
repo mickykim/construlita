@@ -25,11 +25,7 @@ const sliderConfig: Options = {
 
 function Carousel(): JSX.Element {
     const slider = new Glide(".glide", sliderConfig);
-    const [activeBullet, setActiveBullet] = useState("0");
 
-    function updateBullet(e) {
-        const id = e.target.id;
-    }
     useEffect(() => {
         slider.mount();
     }, [slider]);
@@ -115,22 +111,6 @@ function Carousel(): JSX.Element {
                             <p>Lorem Ipsum</p>
                         </li>
                     </ul>
-                </div>
-
-                <div
-                    className="slider__bullets glide__bullets "
-                    data-glide-el="controls[nav]"
-                >
-                    <button
-                        className="slider__bullet glide__bullet border-2 border-dark-gray "
-                        data-glide-dir="=3"
-                        id="0"
-                    ></button>
-                    <button
-                        className="slider__bullet glide__bullet border-2 border-dark-gray"
-                        data-glide-dir="=5"
-                        id="1"
-                    ></button>
                 </div>
             </div>
         </>
