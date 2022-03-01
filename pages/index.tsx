@@ -15,20 +15,10 @@ const Personaliza = dynamic(() => import("../components/personaliza"));
 const Home: NextPage = () => {
     const { observe, unobserve, inView, scrollDirection, entry } = useInView({
         threshold: 0.25, // Default is 0
-        onChange: ({ inView, scrollDirection, entry, observe, unobserve }) => {
-            // Triggered whenever the target meets a threshold, e.g. [0.25, 0.5, ...]
-
-            unobserve(); // To stop observing the current target element
-            observe(); // To re-start observing the current target element
-        },
         onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
             // Triggered when the target enters the viewport
             unobserve();
         },
-        onLeave: ({ scrollDirection, entry, observe, unobserve }) => {
-            // Triggered when the target leaves the viewport
-        },
-        // More useful options...
     });
     return (
         <div className="flex h-full flex-col">
