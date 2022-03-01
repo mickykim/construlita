@@ -41,7 +41,7 @@ function Card(props: propTypes): JSX.Element {
     return (
         <div className=" flex flex-col items-center justify-center bg-light-gray tracking-widest md:w-11/24 md:p-16">
             <h1 className="m-8  text-center text-2xl text-black">
-                <b>BENEFICIOS</b>
+                <b>PASOS</b>
             </h1>
             <ul className=" mx-4 text-xl tracking-wider text-dark-gray">
                 <li className="item-center my-6 flex">
