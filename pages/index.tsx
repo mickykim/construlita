@@ -6,8 +6,9 @@ import Card from "../components/card";
 import Carousel from "../components/carousel";
 import Personaliza from "../components/personaliza";
 import Spacer from "../components/spacer";
-import Video from "../components/video";
 import Logo from "../public/img/logo.svg";
+import dynamic from "next/dynamic";
+const Video = dynamic(() => import("../components/video"));
 
 const Home: NextPage = () => {
     return (
