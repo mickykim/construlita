@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import "swiper/css";
 import "swiper/css/pagination";
-import modelos1 from "../../public/img/modelos1.png";
-import modelos2 from "../../public/img/modelos2.png";
-import modelos3 from "../../public/img/modelos3.png";
-import modelos4 from "../../public/img/modelos4.png";
+import modelos1 from "../../public/img/modelos1.webp";
+import modelos2 from "../../public/img/modelos2.webp";
+import modelos3 from "../../public/img/modelos3.webp";
+import modelos4 from "../../public/img/modelos4.webp";
 import Image from "next/image";
 
 export default function App() {

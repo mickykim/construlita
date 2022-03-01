@@ -6,9 +6,9 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                hero: "url('../public/img/modelos4.png')",
-                banner: "url('../public/img/modelos1.png')",
-                video: "url('../public/img/modelos3.png')",
+                hero: "url('../public/img/modelos4.webp')",
+                banner: "url('../public/img/modelos1.webp')",
+                video: "url('../public/img/modelos3.webp')",
             },
             colors: {
                 yellow: "#FFD50B",
