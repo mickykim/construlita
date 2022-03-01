@@ -6,11 +6,30 @@ import Banner from "../components/banner";
 import Card from "../components/card";
 import Spacer from "../components/spacer";
 import Logo from "../public/img/logo.svg";
+import useInView from "react-cool-inview";
+import Carousel from "../components/carousel";
 
 const Video = dynamic(() => import("../components/video"));
-const Carousel = dynamic(() => import("../components/carousel"));
 const Personaliza = dynamic(() => import("../components/personaliza"));
+
 const Home: NextPage = () => {
+    const { observe, unobserve, inView, scrollDirection, entry } = useInView({
+        threshold: 0.25, // Default is 0
+        onChange: ({ inView, scrollDirection, entry, observe, unobserve }) => {
+            // Triggered whenever the target meets a threshold, e.g. [0.25, 0.5, ...]
+
+            unobserve(); // To stop observing the current target element
+            observe(); // To re-start observing the current target element
+        },
+        onEnter: ({ scrollDirection, entry, observe, unobserve }) => {
+            // Triggered when the target enters the viewport
+            unobserve();
+        },
+        onLeave: ({ scrollDirection, entry, observe, unobserve }) => {
+            // Triggered when the target leaves the viewport
+        },
+        // More useful options...
+    });
     return (
         <div className="flex h-full flex-col">
             <Head>
@@ -62,8 +81,8 @@ const Home: NextPage = () => {
                         </h2>
                     </div>
                     <Spacer />
-                    <div className="">
-                        <Video />
+                    <div className="" ref={observe}>
+                        {inView && <Video />}
                     </div>
                     <Spacer />
                     <div className="flex flex-col justify-between md:flex-row">
