@@ -45,7 +45,7 @@ function Card(props: propTypes): JSX.Element {
             </h1>
             <ul className=" mx-4 text-xl tracking-wider text-dark-gray">
                 <li className="item-center my-6 flex">
-                    <h1 className="m-4 w-28 text-5xl font-bold text-yellow md:m-4">
+                    <h1 className=" text-5xl font-bold text-yellow md:m-4">
                         1
                     </h1>
                     <span className="h-auto self-center ">
@@ -53,17 +53,13 @@ function Card(props: propTypes): JSX.Element {
                     </span>
                 </li>
                 <li className="item-center my-6 flex">
-                    <h1 className="m-4 w-28 text-5xl font-bold text-yellow md:m-4">
-                        2
-                    </h1>
+                    <h1 className="text-5xl font-bold text-yellow md:m-4">2</h1>
                     <span className="h-auto self-center ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </span>
                 </li>
                 <li className="item-center my-6 flex">
-                    <h1 className="m-4 w-28 text-5xl font-bold text-yellow md:m-4">
-                        3
-                    </h1>
+                    <h1 className="text-5xl font-bold text-yellow md:m-4">3</h1>
                     <span className="h-auto self-center ">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </span>
