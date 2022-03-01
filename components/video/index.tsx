@@ -22,7 +22,7 @@ function Video() {
                 </div>
             </div>
             <iframe
-                src="https://www.youtube.com/embed/38YFMI27NFc"
+                src="https://www.youtube.com/embed/38YFMI27NFc?autoplay=1"
                 frameBorder="0"
                 allowFullScreen
                 width="1420"
