@@ -1,15 +1,15 @@
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import Image from "next/image";
 import Banner from "../components/banner";
 import Card from "../components/card";
-import Carousel from "../components/carousel";
-import Personaliza from "../components/personaliza";
 import Spacer from "../components/spacer";
 import Logo from "../public/img/logo.svg";
-import dynamic from "next/dynamic";
-const Video = dynamic(() => import("../components/video"));
 
+const Video = dynamic(() => import("../components/video"));
+const Carousel = dynamic(() => import("../components/carousel"));
+const Personaliza = dynamic(() => import("../components/personaliza"));
 const Home: NextPage = () => {
     return (
         <div className="flex h-full flex-col">
