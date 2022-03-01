@@ -42,8 +42,8 @@ export default function App() {
                     <Image
                         src={modelos1}
                         alt="modelos1"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
@@ -51,8 +51,8 @@ export default function App() {
                     <Image
                         src={modelos2}
                         alt="modelos2"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
@@ -60,8 +60,8 @@ export default function App() {
                     <Image
                         src={modelos3}
                         alt="modelos3"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
@@ -69,8 +69,8 @@ export default function App() {
                     <Image
                         src={modelos4}
                         alt="modelos4"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
@@ -78,8 +78,8 @@ export default function App() {
                     <Image
                         src={modelos1}
                         alt="modelos1"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
@@ -87,8 +87,8 @@ export default function App() {
                     <Image
                         src={modelos2}
                         alt="modelos2"
-                        height="250"
-                        width="250"
+                        height={250}
+                        width={250}
                     />
                     <p>Lorem Ipsum</p>
                 </SwiperSlide>
