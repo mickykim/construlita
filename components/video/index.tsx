@@ -21,18 +21,18 @@ function Video() {
                     <PlayButton className="m-8" />
                 </div>
             </div>
-            <iframe
-                src="https://www.youtube.com/embed/38YFMI27NFc?autoplay=1"
-                frameBorder="0"
-                allowFullScreen
-                width="1420"
-                height="795"
-                title="video"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                className={`${
-                    showVideo ? "" : "hidden"
-                } absolute aspect-video h-full w-full`}
-            />
+            {showVideo && (
+                <iframe
+                    src="https://www.youtube.com/embed/38YFMI27NFc?autoplay=1"
+                    frameBorder="0"
+                    allowFullScreen
+                    width="1420"
+                    height="795"
+                    title="video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    className={`absolute aspect-video h-full w-full`}
+                />
+            )}
         </div>
     );
 }
